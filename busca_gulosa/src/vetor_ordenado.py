@@ -4,10 +4,8 @@ class VetorOrdenado:
   def __init__(self, capacidade):
     self.capacidade = capacidade
     self.ultima_posicao = -1
-    # Mudança no tipo de dados
     self.valores = np.empty(self.capacidade, dtype=object)
 
-  # Referência para o vértice e comparação com a distância para o objetivo
   def insere(self, vertice):
     if self.ultima_posicao == self.capacidade - 1:
       print('Capacidade máxima atingida')
