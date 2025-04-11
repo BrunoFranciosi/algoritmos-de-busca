@@ -16,7 +16,7 @@ class BuscaGulosa:
       vetor_ordenado = VetorOrdenado(len(atual.adjacentes))
       for adjacente in atual.adjacentes:
         if adjacente.vertice.visitado == False:
-          adjacente.vertice.visitado = True
+          #adjacente.vertice.visitado = True
           vetor_ordenado.insere(adjacente.vertice)
       vetor_ordenado.imprime()
 
